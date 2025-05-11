@@ -14,7 +14,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 1. Create model instance with your parameters
-m = ISLMModel(
+m = ISLM(
     ConsumoAutonomo=50,
     EfectosEficiencia=20,
     GastoPublico=30,
