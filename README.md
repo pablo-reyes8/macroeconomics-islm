@@ -1,4 +1,4 @@
-# macroeconomics-islm
+# Macroeconomics IS-LM Model
 
 A Python implementation of the classical **IS–LM** model in a Jupyter notebook. Define your fiscal and monetary parameters, compute the equilibrium ($Y^*$, $i^*$), simulate policy shocks, and visualize results for:
 - **Money market** (real money demand vs. supply)  
