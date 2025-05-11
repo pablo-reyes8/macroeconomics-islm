@@ -12,7 +12,6 @@ All you need are `numpy` and `matplotlib`; simply run the notebook cells to get 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
-from model import ISLMModel
 
 # 1. Create model instance with your parameters
 m = ISLMModel(
