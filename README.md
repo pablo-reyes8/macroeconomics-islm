@@ -1,11 +1,15 @@
 # Macroeconomics IS-LM Model
 
-A Python implementation of the classical **IS–LM** model in a Jupyter notebook. Define your fiscal and monetary parameters, compute the equilibrium ($Y^*$, $i^*$), simulate policy shocks, and visualize results for:
+A Python implementation of the classical **IS–LM** model in a Jupyter notebook. Define your fiscal and monetary parameters, compute the equilibrium (Y<sup>*</sup>, i<sup>*</sup>), simulate policy shocks, and visualize results for:
 - **Money market** (real money demand vs. supply)  
 - **IS–LM diagram** with equilibrium point  
 - **Aggregate supply–demand** (AS–AD)
 
-All you need are `numpy` and `matplotlib`; simply run the notebook cells to get started.
+All you need are `numpy>=1.21.0` and `matplotlib>=3.4.0`; install them with:
+
+```bash
+pip install numpy==1.21.0 matplotlib==3.4.0
+```
 
 ## Usage
 
@@ -32,7 +36,7 @@ Y_star, i_star = m.Equilibrio()
 print(f"Equilibrium: Y*={Y_star}, i*={i_star}")
 
 # 3. Plot baseline IS–LM
-m.graficar()
+m.graph()
 
 
 ### The shocks are interactive and simply by calling the class method you can simulate the shocks, no extra parameters are required.
@@ -51,10 +55,12 @@ m.Shock() # Option 3 and enteder 20 and 15 to simulate that shock
 | `CurvaLM(Y)`       | Computes the LM–curve interest rate for a given output level `Y`.                                                                                                                   |
 | `MercadoDinero(m)` | Calculates real money demand given a nominal money supply parameter `m`.                                                                                                            |
 | `CurvaDemanda(Y)`  | Computes aggregate demand at the output level `Y`.                                                                                                                                  |
-| `Equilibrio()`     | Returns the equilibrium pair ($Y^*$, $i^*$) in the goods and money markets.                                                                                                        |
+| `Equilibrio()`     | Returns the equilibrium pair (Y<sup>*</sup>, i<sup>*</sup>) in the goods and money markets.                                                                                                        |
 | `graficar()`       | Draws a 2×2 grid of plots: money market, IS–LM diagram, and AS–AD diagrams.                                                                                                          |
 | `Shock()`          | Interactive policy-shock simulator:<br>• **Option 1**: fiscal shock (enter % increase or decrease in `GastoPublico`)<br>• **Option 2**: monetary shock (enter % increase or decrease in `OfertaDinero`)<br>• **Option 3**: combined shock (enter monetary %, then fiscal %) |
 
+## License
+Pablo Reyes
 
 
 
