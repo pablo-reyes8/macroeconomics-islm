@@ -59,8 +59,13 @@ m.Shock() # Option 3 and enteder 20 and 15 to simulate that shock
 | `graficar()`       | Draws a 2×2 grid of plots: money market, IS–LM diagram, and AS–AD diagrams.                                                                                                          |
 | `Shock()`          | Interactive policy-shock simulator:<br>• **Option 1**: fiscal shock (enter % increase or decrease in `GastoPublico`)<br>• **Option 2**: monetary shock (enter % increase or decrease in `OfertaDinero`)<br>• **Option 3**: combined shock (enter monetary %, then fiscal %) |
 
-## License
-Pablo Reyes
+## Contributing
 
+Contributions are welcome! Please open issues or submit pull requests at  
+https://github.com/pablo-reyes8
+
+## License
+
+This project is licensed under the Apache License 2.0.  
 
 
